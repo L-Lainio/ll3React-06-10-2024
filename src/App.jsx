@@ -1,34 +1,43 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Navbar from './component/NavBar'
-import Home from './component/Home'
-import Footer from './component/Footer'
+//import About from './component/About'
+//import Footer from './component/Footer'
+//import Header from './component/Header'
+//import Projects from './component/Projects'
+//import Contact from './component/Contact'
+//import Resume from './component/Resume'
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate
+} from "react-router-dom";
 
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
+function App () {
   return (
-    <main className={`${darkMode ? 'dark' : 'light'}`}>
-      <Navbar
-        darkMode={darkMode}
-        toggleDarkMode={toggleDarkMode}
-      />
-      <Home darkMode={darkMode} />
-      {/* <About />
-      <Experience />
-      <Portfolio />
-      <Contact /> */}
-      <Footer />
-    </main>
+    <Router>
+      <div className="App">
+        <Navbar />
+        {/* <Header />
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+        <Footer /> */}
+      </div>
+    </Router>
   );
+
 }
+
 
 export default App;
 
