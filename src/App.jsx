@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import Navbar from './component/NavBar'
-//import About from './component/About'
-//import Footer from './component/Footer'
-//import Header from './component/Header'
-//import Projects from './component/Projects'
-//import Contact from './component/Contact'
+// import { About } from './component/About'
+// import { Contact } from './component/Contact'
+// import { Header } from './component/Header'
+// import { Projects } from './component/Projects'
 //import Resume from './component/Resume'
+// import Footer from './component/Footer'
+import './App.css'
+
+
 import {
   BrowserRouter as Router,
   Route,

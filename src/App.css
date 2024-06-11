@@ -1,7 +1,20 @@
+.App {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.container {
+  box-sizing: border-box;
+}
+
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
 }
 
@@ -39,4 +52,43 @@
 
 .read-the-docs {
   color: #888;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.Navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0 7px 4px rgba(0, 0, 0, 0.342);
+  margin: 0;
+  z-index: 2;
+  width: 100vw;
+}
+
+.Navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.2s ease-in-out;
+}
+
+.Navbar a:hover {
+  color: #a3a3a3;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.highlight {
+  color: #61c0fb;
 }
