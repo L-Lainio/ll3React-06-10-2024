@@ -67,14 +67,25 @@ button:focus-visible {
   }
 }
 
-h1 {
+/* h1 {
   display: inline-block;
   /* Prevents the underline from being too wide */
-  border-bottom: #646cff 4px solid;
-}
+  border-bottom: #101adc 4px solid;
+} */
 
 h2 {
   display: inline-block;
   border-bottom: #646cff 4px solid;
   font-size: 2.1em;
+}
+
+.form {
+  margin: 20px;
+}
+
+.form input {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 100%;
 }
