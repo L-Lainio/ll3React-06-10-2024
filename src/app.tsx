@@ -1,91 +1,35 @@
-import Particles, { ISourceOptions } from "react-tsparticles";
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom';
+import Contact from './component/Contact';
+import Footer from './component/Footer';
+import NavBar from './component/NavBar';
+import About from './component/About';
+// import Main from './component/Main';
+import Portfolio from './component/Portfolio';
+import 'App.css';
 
-const App = () => {
-  const options: ISourceOptions = {
-    // ...
-  };
+function App() {
+	const [darkMode, setDarkMode] = useState(false);
 
-  return <Particles options={options} />;
-};
+	const toggleDarkMode = () => {
+		setDarkMode(!darkMode);
+	};
+
+	return (
+		<main className={`${darkMode ? 'dark' : 'light'}`}>
+			{/* <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} /> */}
+			<header className={darkMode? 'light-mode' : 'dark-mode'}>
+				{/* Header content */}
+			</header>
+			<About />
+			<Portfolio />
+			<Contact />
+			<Footer />
+		</main>
+	);
+}
 
 export default App;
-The component accepts several props — the most important of which is options because it’s responsible for configuring pretty much all aspects of tsParticles’ visuals. The other props configure the canvas or wrapper elements, provide access to the tsParticles instance for additional control, and more.
 
-Configuration options
-Focusing on the options, let’s use them to create our first interactive background.
-
-// ...
-const options: ISourceOptions = {
-  background: {
-    color: "#0d47a1",
-  },
-  interactivity: {
-    events: {
-      onClick: {
-        enable: true,
-        mode: "push",
-      },
-      onHover: {
-        enable: true,
-        mode: "repulse",
-      },
-      resize: true,
-    },
-    modes: {
-      bubble: {
-        distance: 400,
-        duration: 2,
-        opacity: 0.8,
-        size: 40,
-      },
-      push: {
-        quantity: 4,
-      },
-      repulse: {
-        distance: 200,
-        duration: 0.4,
-      },
-    },
-  },
-  particles: {
-    color: {
-      value: "#ffffff",
-    },
-    links: {
-      color: "#ffffff",
-      distance: 150,
-      enable: true,
-      opacity: 0.5,
-      width: 1,
-    },
-    collisions: {
-      enable: true,
-    },
-    move: {
-      direction: "none",
-      enable: true,
-      outMode: "bounce",
-      random: false,
-      speed: 6,
-      straight: false,
-    },
-    number: {
-      density: {
-        enable: true,
-        value_area: 800,
-      },
-      value: 80,
-    },
-    opacity: {
-      value: 0.5,
-    },
-    shape: {
-      type: "circle",
-    },
-    size: {
-      random: true,
-      value: 5,
-    },
-  },
-};
-// ...
+// Assuming you have a div with id="root" in your public/index.html
+ReactDOM.render(<App />, document.getElementById('root')); // Corrected function call
