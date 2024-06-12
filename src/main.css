@@ -1,4 +1,136 @@
-:root {
+/* (async ()=> {
+    await loadPolygonMaskPlugin(tsParticles);
+
+    await tsParticles.load({
+
+      id: "tsparticles",
+      options: {
+
+        pauseOnBlur: false,
+        interactivity: {
+          events: {
+            onHover: {
+              enable: true,
+              mode: "bubble"
+            }
+
+            ,
+            resize: true
+          }
+
+          ,
+          modes: {
+            bubble: {
+              distance: 40,
+              duration: 2,
+              opacity: 8,
+              size: 6,
+              speed: 3
+            }
+          }
+        }
+
+        ,
+        particles: {
+          color: {
+            value: ["#4285f4", "#34A853", "#FBBC05", "#EA4335"]
+          }
+
+          ,
+          links: {
+            color: "random",
+            distance: 40,
+            enable: true,
+            opacity: 0.8,
+            width: 1
+          }
+
+          ,
+          move: {
+            direction: "none",
+            enable: true,
+            outModes: "bounce",
+            speed: 1
+          }
+
+          ,
+          number: {
+            value: 200
+          }
+
+          ,
+          opacity: {
+            animation: {
+              enable: true,
+              speed: 2,
+              sync: false
+            }
+
+            ,
+            value: {
+              min: 0.3, max: 0.8
+            }
+          }
+
+          ,
+          shape: {
+            type: "circle"
+          }
+
+          ,
+          size: {
+            value: 1
+          }
+        }
+
+        ,
+        polygon: {
+          draw: {
+
+            enable: true,
+            stroke: {
+              color: "#fff",
+              opacity: 0.2,
+              width: 1
+            }
+          }
+
+          ,
+          enable: true,
+          move: {
+            radius: 5
+          }
+
+          ,
+          position: {
+            x: 30,
+            y: 10
+          }
+
+          ,
+          inline: {
+            arrangement: "equidistant"
+          }
+
+          ,
+          scale: 1,
+          type: "inline",
+          url: "https://particles.js.org/images/google.svg"
+        }
+
+        ,
+        background: {
+          color: "#000000",
+          image: "",
+          position: "50% 50%",
+          repeat: "no-repeat",
+          size: "cover"
+        }
+      }
+    });
+})(); */
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -22,13 +154,13 @@ a:hover {
   color: #535bf2;
 }
 
-body {
+/* body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
+} */
 
 h1 {
   font-size: 3.2em;
@@ -65,14 +197,14 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
 
 /* h1 {
   display: inline-block;
   /* Prevents the underline from being too wide */
-  border-bottom: #101adc 4px solid;
+  /* border-bottom: #101adc 4px solid;
 } */
-
+/*
 h2 {
   display: inline-block;
   border-bottom: #646cff 4px solid;
@@ -88,4 +220,4 @@ h2 {
   margin-top: 5px;
   margin-bottom: 5px;
   width: 100%;
-}
+} */

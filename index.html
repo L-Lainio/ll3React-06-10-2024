@@ -6,8 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lora Lainio | Full-Stack Web Developer</title>
 
+    <link rel="stylesheet" href="./App.css">
   </head>
+
   <body>
+<div id="particles-js">
+  <div class="heading">
+    <h1>GeeksforGeeks</h1>
+    <h3>
+      A computer Science
+      portal for geeks
+    </h3>
+  </div>
+</div>
+
+
 <NavBar />
 <Hero />
 <About />
@@ -15,7 +28,11 @@
 <Contact />
 
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script src="particles.js-master/particles.js">
+    </script>
+    <script src="/particles.js-master/demo/js/app.js">
+    </script>
+    <script type="module" src="/src/App.jsx"></script>
   </body>
-  <Footer />
+  <Footer>
 </html>
