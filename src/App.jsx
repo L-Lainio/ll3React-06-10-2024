@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-no-undef */
 // import React from "react";
-import { About } from "./pages/About/About.jsx";
-import { Projects } from "./pages/Projects/Projects.jsx";
-import { Contact } from "./pages/Contact/Contact.jsx";
+import About  from './component/About.jsx';
+import Projects  from './component/Projects.jsx';
+import Contact from './component/Contact.jsx';
 import './App.css';
 // import { useState } from 'react';
 
